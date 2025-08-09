@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SoleMeme11 — Top 10 Movers (Solana)</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">⚡ SoleMeme11 — Top 10 Movers (Solana)</div>
+    <div class="controls">
+      <label class="muted">Refresh</label>
+      <select id="refreshSel"><option value="30000" selected>30s</option><option value="60000">60s</option></select>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Top 10 Movers — Sorted by 1h % (desc)</h2>
+      <table id="moversTable">
+        <thead><tr><th>#</th><th>Name</th><th>Symbol</th><th>Price (USD)</th><th>1h %</th><th>24h %</th><th>Trade</th></tr></thead>
+        <tbody id="tokenTable"><tr><td colspan="7">Loading…</td></tr></tbody>
+      </table>
+    </section>
+
+    <section class="card" style="margin-top:12px">
+      <h3>Whale transactions (Solscan)</h3>
+      <div id="whaleFeed"><p class="muted">Loading…</p></div>
+    </section>
+
+    <section class="card" style="margin-top:12px">
+      <h3>Chart (click a row)</h3>
+      <canvas id="miniChart" height="120"></canvas>
+    </section>
+  </main>
+
+  <footer class="footer">Built for NogGambleNoFuture — Updates every 30s</footer>
+  <audio id="alertSound" src="assets/alert.mp3" preload="auto"></audio>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

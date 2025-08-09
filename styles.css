@@ -1,0 +1,14 @@
+:root{--bg:#071022;--card:#0f1720;--muted:#9aa4b2;--accent:#00d1a1}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;background:var(--bg);color:#e6eef6}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:linear-gradient(90deg,#071022,#081827);position:sticky;top:0}
+.brand{font-weight:700}
+.container{padding:14px;max-width:1100px;margin:0 auto}
+.card{background:var(--card);padding:12px;border-radius:8px;margin-bottom:12px}
+table{width:100%;border-collapse:collapse;color:#e6eef6}
+th,td{padding:8px;border-bottom:1px solid rgba(255,255,255,0.03);font-size:13px}
+th{color:var(--muted);text-align:left}
+.muted{color:var(--muted);font-size:13px}
+.trade-btn{background:linear-gradient(90deg,#00ffb3,#00d1ff);color:#001820;padding:6px 10px;border-radius:6px;border:none;cursor:pointer}
+.small{font-size:12px;padding:4px 8px}
+.footer{padding:10px;text-align:center;color:var(--muted)}
+@media (max-width:800px){.container{padding:8px}table,thead,tbody,th,td,tr{display:block}thead{display:none}tr{margin-bottom:10px}td{padding:8px;position:relative;padding-left:45%}td:before{position:absolute;left:10px;top:8px;width:40%;white-space:nowrap;font-weight:700;color:var(--muted)}td:nth-of-type(1):before{content:"#"}td:nth-of-type(2):before{content:"Name"}td:nth-of-type(3):before{content:"Sym"}td:nth-of-type(4):before{content:"Price"}td:nth-of-type(5):before{content:"1h%"}td:nth-of-type(6):before{content:"24h%"}td:nth-of-type(7):before{content:"Trade"}}
