@@ -1,4 +1,4 @@
-const DEX_URL = 'fetch(https://solememe-proxy.username.workers.dev?url=https://api.dexscreener.io/latest/dex/tokens/solana)';
+const DEX_URL = 'https://solememe23.benjamin-zolota.workers.dev?url=https://api.dexscreener.io/latest/dex/tokens/solana/';
 // Solscan public transaction endpoint (no API key) - query recent transactions
 const SOLSCAN_TX_URL = 'https://public-api.solscan.io/transaction?limit=20';
 
